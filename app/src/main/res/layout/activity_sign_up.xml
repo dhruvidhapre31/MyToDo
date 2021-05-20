@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80A8C388">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/sigup_appname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="50dp"
+                            android:text="My To Do"
+                            android:textAllCaps="true"
+                            android:textColor="#689F38"
+                            android:textSize="36sp" />
+
+                        <EditText
+                            android:id="@+id/signup_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:ems="15"
+                            android:hint="Email"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/signup_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:ems="15"
+                            android:hint="Password"
+                            android:inputType="textPassword" />
+
+                        <EditText
+                            android:id="@+id/signup_repassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:ems="15"
+                            android:hint="Confirm password"
+                            android:inputType="textPassword" />
+
+                        <Button
+                            android:id="@+id/signup_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:text="Sign Up"
+                            app:cornerRadius="10dp" />
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+</ScrollView>
